@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareBuddy</title>
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <form action="connect.php" method="post">
+        <div class="login">
+            <div class="heading"><h1>LOGIN</h1></div>
+                <div class="name">   
+                    <p>Username</p>
+                    <input type="text" placeholder="Enter your username" name="username" class="username" required>
+                </div>
+            <div class="password-field">
+                <p>Password</p>
+                <input type="password" placeholder="Enter you Password" name="password" class="password" required> 
+            </div>
+           <a href="#" class="forgot">Forgot password?</a> 
+           <p class="para"></p>
+            <button class="submit">Submit</button>
+            <p class="signup">Don't have an account?<a href="signUp.html">Sign Up</a></p>
+        </div>
+    </form>
+    <script src="login.js"></script>
+</body>
+</html>
