@@ -27,7 +27,7 @@ CareBuddy is a comprehensive web application built to support elderly individual
 
  **Clone the Repository:**
    ```bash
-   https://github.com/sakshipriya10/SheCodess
+ https://github.com/sakshipriya10/SheCodess
 
 
 
