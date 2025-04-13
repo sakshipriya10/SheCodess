@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet</title>
+    <link rel="stylesheet" href="diet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body>
+   <div class="diet-plan">
+    <h1>Create your meal plan in seconds according to your diet</h1>
+    <p>Preferred diet</p>
+    <div class="diet-options">
+        <div class="diet-option" id="anything">
+            <img src="anything.jpg">
+            <p>Anything</p>
+        </div>
+        <div class="diet-option">
+            <img src="vegan.jpg">
+            <p>Vegan</p>
+        </div>
+        <div class="diet-option">
+            <img src="vegetarian.webp">
+            <p>Vegetarian</p>
+        </div>
+        <div class="diet-option">
+            <img src="keto.jpg">
+            <p>Keto</p>
+        </div>
+    </div>
+    <div class="description-of-diet">
+            <p class="portion">I want to eat <input type="number" id="calories"> calories</p>
+            <p class="portion">in 
+        <select id="mealCount">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>meals</p>
+
+        <ul>
+            <li class="list-item"><i class="fa-solid fa-circle"></i>At least <p id="carbs">0g</p>Carbs</li>
+            <li class="list-item"><i class="fa-solid fa-circle"></i>At least <p id="fat">0g</p>Fat</li>
+            <li class="list-item"><i class="fa-solid fa-circle"></i>At least <p id="protein">0g</p>Protien</li>
+        </ul>
+    </div>
+    <button class="generate" onclick="generateDiet()">Generate</button>
+   </div>
+   <div class="article">
+    <h1>Here is list that shows how many calories a person should should eat per day.</h1>
+    
+
+    <h2>Daily Calorie Needs by Age, Gender, and Activity Level</h2>
+
+<table border="2" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Sedentary</th>
+      <th>Moderately Active</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Children (2-3 yrs)</td>
+      <td>1,000</td>
+      <td>1,000-1,400</td>
+      <td>1,000-1,400</td>
+    </tr>
+    <tr>
+      <td>Girls (4-8 yrs)</td>
+      <td>1,200-1,400</td>
+      <td>1,400-1,600</td>
+      <td>1,400-1,800</td>
+    </tr>
+    <tr>
+      <td>Boys (4-8 yrs)</td>
+      <td>1,200-1,400</td>
+      <td>1,400-1,600</td>
+      <td>1,600-2,000</td>
+    </tr>
+    <tr>
+      <td>Girls (9-13 yrs)</td>
+      <td>1,400-1,600</td>
+      <td>1,600-2,000</td>
+      <td>1,800-2,200</td>
+    </tr>
+    <tr>
+      <td>Boys (9-13 yrs)</td>
+      <td>1,600-2,000</td>
+      <td>1,800-2,200</td>
+      <td>2,000-2,600</td>
+    </tr>
+    <tr>
+      <td>Females (14-18 yrs)</td>
+      <td>1,800</td>
+      <td>2,000</td>
+      <td>2,400</td>
+    </tr>
+    <tr>
+      <td>Males (14-18 yrs)</td>
+      <td>2,000-2,400</td>
+      <td>2,400-2,800</td>
+      <td>2,800-3,200</td>
+    </tr>
+    <tr>
+      <td>Females (19-30 yrs)</td>
+      <td>1,800-2,000</td>
+      <td>2,000-2,200</td>
+      <td>2,400</td>
+    </tr>
+    <tr>
+      <td>Males (19-30 yrs)</td>
+      <td>2,400-2,600</td>
+      <td>2,600-2,800</td>
+      <td>3,000</td>
+    </tr>
+    <tr>
+      <td>Females (31-50 yrs)</td>
+      <td>1,800</td>
+      <td>2,000</td>
+      <td>2,200</td>
+    </tr>
+    <tr>
+      <td>Males (31-50 yrs)</td>
+      <td>2,200-2,400</td>
+      <td>2,400-2,600</td>
+      <td>2,800-3,000</td>
+    </tr>
+    <tr>
+      <td>Females (51+ yrs)</td>
+      <td>1,600</td>
+      <td>1,800</td>
+      <td>2,000-2,200</td>
+    </tr>
+    <tr>
+      <td>Males (51+ yrs)</td>
+      <td>2,000-2,200</td>
+      <td>2,200-2,400</td>
+      <td>2,400-2,800</td>
+    </tr>
+  </tbody>
+</table>
+
+<u><h3>Definitions</h3></u>
+
+<p><strong>Sedentary:</strong> Little to no physical activity outside of daily life (e.g., desk job).</p>
+<p><strong>Moderately Active:</strong> Moderate exercise or physical activity 3-5 days a week.</p>
+<p><strong>Active:</strong> Hard exercise, sports, or physical job with lots of movement.</p>
+
+   </div>
+   <script src="diet.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing:border-box;
+}
+body{
+    color:rgb(0, 0, 0);
+    background-color:rgb(186, 237, 255);
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("bmi2.jpg");
+    background-size: cover;
+}
+
+.bmi-page{
+    background-color: rgba(255, 255, 255, 0.496);
+    backdrop-filter: blur(7px);
+    height: 30rem;
+    width: 25rem;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow:0px 0px 20px 3px rgba(26, 26, 26, 0.759);
+    border-radius: 0.5rem;
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.button-holder{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#btn{
+    height:2.5rem;
+    width:100%;
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 99, 119);
+    box-shadow:0px 0px 7px 1px rgba(32, 32, 32, 0.562);
+    font-size:1.2rem;
+    font-weight:500;
+    border: none;
+}
+#btn:hover{
+    font-size: 1.25rem;
+    box-shadow:0px 0px 10px 1.1px rgba(0, 0, 0, 0.842);
+}
+input{
+    height:2rem;
+    width:100%;
+    border:1px solid rgba(0, 0, 0, 0.695);
+    outline: none;
+    font-size: 1.1rem;
+    padding-left: 0.5rem;
+}
+.show-bmi{
+    display:flex;
+    flex-direction: row;
+}
+.result{
+    display:flex;
+}
+#bmi-value, #bmi-count{
+    margin-left: 0.3rem;
+}

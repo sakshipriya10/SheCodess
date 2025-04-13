@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareBuddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-person-cane"></i>
+                <h2>CareBuddy</h2>
+            </div>
+            <a href="#home-page" class="nav-item home" onclick="borderHome()">Home</a>
+            <a href="#services-for-elders" class="nav-item services" onclick="borderServices()">Services</a>
+            <a href="#about-us-section" class="nav-item about" onclick="borderAbout()">About Us</a>
+            <a href="why-choose-us.html" class="nav-item contact" onclick="borderContact()">Why choose us</a>
+            <a href="login.html"><button class="btn">Login</button></a>
+            <a href="signUp.html"><button class="btn user-signup">Sign Up</button></a>
+        </div>
+    </header>
+    <main>
+        <div id="home-page">
+            <div class="top-page">
+        <div class="heading">
+            <h1 class="top-heading">Senior Care</h1>
+            <div class="bottom-heading">
+                <h1 class="at">at the</h1>
+                <h1 class="website-name">CareBuddy</h1>
+            </div>
+            <div class="para">
+                <p>We are committed to ensuring our clients are comfortable,</p>
+                <p>cared for, and safe.</p>
+                <p>Respect and care for the elderly is the foundation</p>
+                <p>of a compassionate society.</p>
+            </div>
+            <a href="know-more.html"><button class="know-more">Know more</button></a>
+            <button class="chatbot-button" onclick="openChatbot()">
+              💬 Chat with us
+            </button>
+        </div>
+    </div>
+    </div>
+    <!--Services-->
+    <div class="services-page" id="backward-services">
+      <div class="sub-heading">
+      <h1>See Our Services</h1>
+    </div>
+    <div class="front-page" id="services-for-elders">
+        <i class="fa-solid fa-backward" style="color: rgba(0, 0, 0, 0.544);"></i>
+        <div class="service">
+            <p>Generate a meal plan according to your diet</p>
+            <img src="diet.jpg" class="service-image">
+            
+            <a href="diet.html">
+                <button class="plan-btn">Make a diet plan</button>
+            </a>
+        </div>
+
+        <div class="service">
+            <p>Learn exercises from videos that will help you maintaining your fitness</p>
+            <img src="fitness.webp" class="service-image">
+            <a href="Exercise.html">
+                <button class="plan-btn">Learn Exercise</button>
+            </a>
+            
+        </div>
+        <div class="service">
+            <p>Make a to do list to plan your whole day</p>
+            <img src="todolist.jpeg" class="service-image">
+            <a href="todolist.html">
+            <button class="plan-btn">Make a to do list</button>
+        </a>
+        </div>
+        <div class="service">
+            <p>Calculate your BMI to check if you are fit or not</p>
+            <img src="bmi.jpg" class="service-image">
+            <a href="bmi.html">
+                <button class="plan-btn">Calculate BMI</button>
+            </a>
+        </div>
+        <a href="#forward-services">
+        <i class="fa-solid fa-forward"></i>
+    </a>
+    </div>
+</div>
+
+<!--Page 2 of services-->
+<div class="services-page2" id="forward-services">
+    <div class="front-page" id="services-for-elders">
+        <a href="#backward-services">
+        <i class="fa-solid fa-backward"></i>
+    </a>
+        <div class="service">
+            <p>Find location using maps API</p>
+            <img src="location.jpg" class="service-image">
+            <a href="maps.html">
+            <button class="plan-btn">See map</button>
+          </a>
+        </div>
+        <i class="fa-solid fa-forward" style="color: rgba(0, 0, 0, 0.544);"></i>     
+    </div>
+</div>
+
+<!--About us section--> 
+      <div id="about-us-section">
+      <div class="stack-area">
+        <div class="left">
+          <div class="title">About Us</div>
+          <div class="sub-title">
+            Welcome to ElderCare Connect, where we prioritize the well-being and happiness of our elderly community, Our pioneering approach integrates personalized care and modern technology to enhance the lives of seniors.We are committed to providing exceptional care and fostering trust with every individual we serve.Our team is composed of experienced caregivers and professionals dedicated to understanding and addressing the unique needs of seniors.
+            <br />
+          
+          </div>
+        </div>
+        <div class="right">
+          <div class="card">
+            <div class="sub">Simplified</div>
+            <div class="content">Complex tasks are now simple</div>
+          </div>
+          <div class="card">
+            <div class="sub">Customer-centric</div>
+            <div class="content">We are committed to providing exceptional care</div>
+          </div>
+          <div class="card">
+            <div class="sub">Innovation</div>
+            <div class="content">We use modern technology and personalized care</div>
+          </div>
+          <div class="card">
+            <div class="sub">Support</div>
+            <div class="content">Now its 24/7 support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
