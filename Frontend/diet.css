@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: rgb(0, 0, 0);
+    background-color: rgb(186, 237, 255);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.diet-plan{
+    height: 95vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.diet-options{
+    height: 298px;
+    width: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.diet-option{
+    height: 8.2rem;
+    width: 13rem;
+    color: black;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0, 138, 162);
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.diet-option:hover{
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 4px 1px rgba(8, 8, 8, 0.577);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.generate{
+    height: 3rem;
+    width: 10rem;
+    color: white;
+    background-color: rgb(0, 99, 119);
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    box-shadow: 0 0 6px 2px rgba(8, 8, 8, 0.905);
+}
+.generate:hover{
+    font-size: 1.38rem;
+    box-shadow: 0 0 6px 2px black;
+    background-color: rgb(0, 136, 163);
+}
+img{
+    height: 5rem;
+    width: 8rem;
+}
+.diet-option p{
+    font-size: 1.1rem;
+    font-weight: 450;
+}
+.description-of-diet{
+    height: 190px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.portion{
+    display: flex;
+}
+.list-item{
+    display: flex;
+    height: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.list-item i{
+    font-size: 0.5rem;
+}
+#calories{
+    height: 1.3rem;
+    width: 6rem;
+    outline: none;
+    margin: 0 0.25rem 0 0.25rem;
+}
+select{
+    margin: 0 0.25rem 0 0.25rem;
+}
+#carbs, #protein{
+    margin: 0 0.25rem 0 0.25rem;
+}
+.article{
+    display: flex;
+    height: 120vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.article table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+.article h1{
+    margin: 1rem 0 1rem 0;
+}
+.article h2{
+    margin: 0rem 0 1.2rem 0;
+}
+.article h3{
+    margin: 0.8rem 0 0.2rem 0;
+}
+.article p{
+    margin: 0.6rem 0 0.6rem 0;
+}
+
