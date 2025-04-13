@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:linear-gradient(to left, white, rgb(80, 214, 248));
+}
+/* Navbar */
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.logo{
+    display: flex;
+    height: 65px;
+    align-items: flex-start;
+    margin-left: 1rem;
+}
+.logo i{
+    font-size: 2.7rem;
+    color: rgb(0, 98, 125);
+}
+.logo h2{
+    color: #00add0;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    padding-top: 0.9rem;
+    margin-left: 0.1rem;
+}
+.nav-item{
+    color: #000000;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.btn{
+    height: 2.5rem;
+    width: 8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.3rem;
+    color: #ffffff;
+    background-color: #0083B8;
+}
+.btn:hover{
+    color: #0083B8;
+    background-color: #ffffff;
+    border: 1px solid #0083B8;
+    cursor: pointer;
+}
+.user-signup{
+    margin-right: 4rem;
+}
+.home{
+    margin-left: 10rem;
+}
+
+/* Main section of Home Page */
+
+.top-page{
+    height: 100vh;
+    width: 100%;
+    background-image: url("caresafety.jpg");
+    background-size: cover;
+}
+.heading{
+    height: 400px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10rem 0 0 10rem;
+}
+.top-heading{
+    color: white;
+    text-shadow: 2px 2px 3px rgba(26, 26, 26, 0.762);
+    font-size: 3rem;
+}
+.bottom-heading{
+    display: flex;
+    text-shadow: 2px 2px 3px rgba(26, 26, 26, 0.762);
+    font-size: 1.5rem;
+}
+.at{
+    color: white;
+}
+.website-name{
+    color: #00add0;
+    margin-left: 0.5rem;
+}
+.heading p{
+    color: black;
+}
+.know-more{
+    height: 2.6rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 2rem;
+    color: #0083B8;
+    background-color: #ffffff;
+    border: 1px solid #0083B8;
+    cursor: pointer;
+}
+.know-more:hover{
+    color: white;
+    background-color: #0083B8;
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+.para p{
+    margin-top: 0.4rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* services */
+/* main page */
+
+.services-page{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to left, white, rgb(80, 214, 248));
+}
+.services-page2{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to left, white, rgb(80, 214, 248));
+}
+.front-page{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+.service{
+    height: 370px;
+    width: 320px;
+    color:#004661;
+    background-color: white;
+    border-radius: 0.3rem;
+    margin: 5rem 0.7rem 3rem 0.7rem;
+    box-shadow: 2px 2px 7px 2px rgba(17, 17, 17, 0.714);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.service:hover{
+    transform: scale(1.04);
+}
+.services p{
+    color: #004661;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.service-image{
+    height: 60%;
+    width: 100%;
+}
+.service a{
+    width: 100%;
+    text-align: center;
+}
+.plan-btn{
+    height: 2.1rem;
+    width: 80%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 0.3rem;
+    color: #fff;
+    background-color: #0083B8;
+}
+.plan-btn:hover{
+    color: #0083B8;
+    background-color: #ffffff;
+    border: 1px solid #0083B8;
+}
+.front-page i{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    margin: 0 0.5rem 14rem 0.5rem;
+}
+
+/* About us section */
+
+#about-us-section{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to left, white, rgb(80, 214, 248));
+}
+#contact-section{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to left, white, rgb(80, 214, 248));
+}
+
+.chatbot-button {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;;
+    bottom: 20px;
+    right: 20px;
+    background-color: #06649f;
+    color: white;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(239, 236, 236, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+
+.chatbot-button:hover {
+    background-color: #0884d1;
+}
+
+.why-choose-us-section{
+    background:linear-gradient(to left, white, rgb(80, 214, 248));
+}
+
+.sub-heading{
+    margin-top: 5em;
+    text-align: center;
+}
+
+
+
+.stack-area {
+    width: 100%;
+    height: 400vh;
+    position: relative;
+    background: rgb(113, 216, 234);
+    background:linear-gradient(to left, white, rgb(80, 214, 248));
+    display: flex;
+  }
+  .left {
+    height: 100vh;
+    flex-basis: 50%;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .right {
+    height: 100vh;
+    flex-basis: 50%;
+    position: sticky;
+    top: 0;
+  }
+  /* Styling for the left elements content starts here */
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title {
+    width: 420px;
+    font-size: 80px;
+    font-family: poppins;
+    font-weight: 600;
+    line-height: 88px;
+    text-decoration: #feffff;
+  }
+  .sub-title {
+    width: 420px;
+    font-family: poppins;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .sub-title button {
+    font-family: poppins;
+    font-size: 14px;
+    padding: 15px 30px;
+    background: rgb(255, 255, 255);
+    color: white;
+    border-radius: 8mm;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  /* Styling for the left elements content ends here */
+
+  .card {
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    transition: 0.3s ease-in-out;
+  }
+  .card:nth-child(1) {
+    background: rgb(163, 174, 255);
+  }
+  .card:nth-child(2) {
+    background: rgb(104, 227, 238);
+  }
+  .card:nth-child(3) {
+    background: rgb(180, 134, 241);
+  }
+  .card:nth-child(4) {
+    background: rgb(236, 167, 219);
+  }
+
+  /* Styling for the card content starts here */
+  .card {
+    box-sizing: border-box;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+  .sub {
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 700;
+}
+  .content {
+    font-family: poppins;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+}
+  /* Styling for the card content ends here */
+
+  .away {
+    transform-origin: bottom left;
+}
+
