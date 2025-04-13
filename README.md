@@ -23,11 +23,25 @@ CareBuddy is a comprehensive web application built to support elderly individual
 **APIs & Tools**: Google Maps API, YouTube (for exercise videos)
 **Design tool**: Figma
 
-
-
-
-## 🚀 How to Run the Project
+##  How to Run the Project
 
 1. **Clone the Repository:**
    ```bash
+   https://github.com/sakshipriya10/SheCodess
+2. ## Frontend Setup
+
+
+
+
+
+
+
+
+
+##  Screenshots
+
+
+
+   
+   
    
