@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="space space--small"></div>
+  <div class="title">Why Choose Us?</div>
+<div class="cards">
+  <div class="card" data-index="0">
+    <div class="card__inner">
+      <div class="card__image-container">
+        <img
+          class="card__image"
+          src="https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg"
+          alt=""
+        />
+      </div>
+      <div class="card__content">
+        <h1 class="card__title">Quality care with compassione</h1>
+        <p class="card__description">
+          We provide elderly care with a commitment to quality and compassion, ensuring your loved ones receive the best support!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card" data-index="0">
+    <div class="card__inner">
+      <div class="card__image-container">
+        <img
+          class="card__image"
+          src="https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg"
+          alt=""
+        />
+      </div>
+      <div class="card__content">
+        <h1 class="card__title">Safe and Reliable</h1>
+        <p class="card__description">
+          Elderly care with a focus on safety and reliability. Your loved ones are in good hands with our dedicated team!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card" data-index="0">
+    <div class="card__inner">
+      <div class="card__image-container">
+        <img
+          class="card__image"
+          src="https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg"
+          alt=""
+        />
+      </div>
+      <div class="card__content">
+        <h1 class="card__title">Here for you Anytime</h1>
+        <p class="card__description">
+          We offer support for the elderly whenever they need it, day or night. Dedicated caregivers, personalized plans!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="space"></div>
+
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(183, 91%, 83%);
+  background: linear-gradient(to right ,white, rgb(6, 102, 134));
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+}
+.title{
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+  font-size: 40px;
+  font-weight: bold;
+
+}
+.card {
+  position: sticky;
+  top: 0;
+}
+
+.card__inner {
+  will-change: transform;
+  background: white;
+  border-radius: 14px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px hsla(265.3, 20%, 10%, 35%);
+  transform-origin: center top;
+}
+
+.cards {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(var(--cards-count), var(--card-height));
+  gap: 40px 0;
+}
+
+.card__image-container {
+  display: flex;
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.card__content {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: #16263a;
+}
+
+.card__description {
+  line-height: 1.4;
+  font-size: 22px;
+  color: #16263a;
+}
+
+.space {
+  height: 90vh;
+}
+
+.space--small {
+  height: 40vh;
+}
+
+@media (max-width: 600px) {
+  .card__inner {
+    flex-direction: column;
+  }
+
+  .card__image-container {
+    width: 100%;
+  }
+
+  .card__image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .card__title {
+    font-size: 32px;
+  }
+
+  .card__description {
+    font-size: 16px;
+  }
+
+  .card__content {
+    padding: 30px 20px;
+  }
+}
+</style>
+
+<script>
+  const{ ScrollObserver, valueAtPercentage } = aat
+
+const cardsContainer = document.querySelector('.cards')
+const cards = document.querySelectorAll('.card')
+cardsContainer.style.setProperty('--cards-count', cards.length)
+cardsContainer.style.setProperty(
+  '--card-height',
+  `${cards[0].clientHeight}px`
+)
+Array.from(cards).forEach((card, index) => {
+  const offsetTop = 20 + index * 20
+  card.style.paddingTop =  `${offsetTop}px`
+  if (index === cards.length - 1) {
+    return
+  }
+  const toScale = 1 - (cards.length - 1 - index) * 0.1
+  const nextCard = cards[index + 1]
+  const cardInner = card.querySelector('.card__inner')
+  ScrollObserver.Element(nextCard, {
+    offsetTop,
+    offsetBottom: window.innerHeight - card.clientHeight
+  }).onScroll(({ percentageY }) => {
+    cardInner.style.scale = valueAtPercentage({
+      from: 1,
+      to: toScale,
+      percentage: percentageY
+    })
+    cardInner.style.filter = `brightness(${valueAtPercentage({
+      from: 1,
+      to: 0.6,
+      percentage: percentageY
+    })})`
+  })
+})
+</script>
+</body>
+</html>
