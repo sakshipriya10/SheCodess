@@ -39,12 +39,12 @@ CareBuddy is a comprehensive web application built to support elderly individual
 
 
 ##  Screenshots
-![s1]()
-![s1]()
-![s1]()
-![s1]()
-![s1]()
-![s1]()
+![s1](https://github.com/sakshipriya10/SheCodess/blob/main/Screenshot%202025-04-13%20151702.png)
+![s2]()
+![s3]()
+![s4]()
+![s5]()
+![s6]()
 
    
    
