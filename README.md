@@ -39,7 +39,7 @@ CareBuddy is a comprehensive web application built to support elderly individual
 
 
 ##  Screenshots
-![s1](C:\Users\priya\OneDrive\Pictures\Screenshots)
+![s1]()
 ![s1]()
 ![s1]()
 ![s1]()
