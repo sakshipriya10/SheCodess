@@ -6,6 +6,11 @@
     <title>CareBuddy</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"/>
 </head>
 <body>
     <header>
@@ -18,7 +23,7 @@
             <a href="#home-page" class="nav-item home" onclick="borderHome()">Home</a>
             <a href="#services-for-elders" class="nav-item services" onclick="borderServices()">Services</a>
             <a href="#about-us-section" class="nav-item about" onclick="borderAbout()">About Us</a>
-            <a href="#contact-section" class="nav-item contact" onclick="borderContact()">Contact</a>
+            <a href="why-choose-us.html" class="nav-item contact" onclick="borderContact()">Why choose us</a>
             <a href="login.html"><button class="btn">Login</button></a>
             <a href="signUp.html"><button class="btn user-signup">Sign Up</button></a>
         </div>
@@ -38,14 +43,18 @@
                 <p>Respect and care for the elderly is the foundation</p>
                 <p>of a compassionate society.</p>
             </div>
-            <a href="#know-more-section"><button class="know-more">Know more</button></a>
+            <a href="know-more.html"><button class="know-more">Know more</button></a>
+            <button class="chatbot-button" onclick="openChatbot()">
+              💬 Chat with us
+            </button>
         </div>
     </div>
     </div>
-
     <!--Services-->
-
     <div class="services-page" id="backward-services">
+      <div class="sub-heading">
+      <h1>See Our Services</h1>
+    </div>
     <div class="front-page" id="services-for-elders">
         <i class="fa-solid fa-backward" style="color: rgba(0, 0, 0, 0.544);"></i>
         <div class="service">
@@ -58,27 +67,26 @@
         </div>
 
         <div class="service">
-            <p>Get reminders for your medications timely</p>
-            <img src="reminder.webp" class="service-image">
-            <a href="medicinereminder.html">
-                <button class="plan-btn">Set Reminder</button>
+            <p>Learn exercises from videos that will help you maintaining your fitness</p>
+            <img src="fitness.webp" class="service-image">
+            <a href="Exercise.html">
+                <button class="plan-btn">Learn Exercise</button>
             </a>
             
         </div>
         <div class="service">
-            <p>Add contact of your well wishers for location sharing</p>
-            <img src="location.jpg" class="service-image">
-            <a href="maps.html">
-            <button class="plan-btn">Add Contact</button>
+            <p>Make a to do list to plan your whole day</p>
+            <img src="todolist.jpeg" class="service-image">
+            <a href="todolist.html">
+            <button class="plan-btn">Make a to do list</button>
         </a>
         </div>
         <div class="service">
-            <p>Set your sleep time reminder for better health</p>
-            <img src="img3.jpg" class="service-image">
-            <a href="sleepreminder.html">
-                <button class="plan-btn">Sleep Reminder</button>
+            <p>Calculate your BMI to check if you are fit or not</p>
+            <img src="bmi.jpg" class="service-image">
+            <a href="bmi.html">
+                <button class="plan-btn">Calculate BMI</button>
             </a>
-            
         </div>
         <a href="#forward-services">
         <i class="fa-solid fa-forward"></i>
@@ -86,435 +94,55 @@
     </div>
 </div>
 
-<!---->
+<!--Page 2 of services-->
 <div class="services-page2" id="forward-services">
     <div class="front-page" id="services-for-elders">
         <a href="#backward-services">
         <i class="fa-solid fa-backward"></i>
     </a>
         <div class="service">
-            <p>Generate a meal plan according to your diet</p>
-            <img src="diet.jpg" class="service-image">
-            <button class="plan-btn">Make a diet plan</button>
-        </div>
-        <div class="service">
-            <p>Get reminders for your medications timely</p>
-            <img src="reminder.webp" class="service-image">
-            <button class="plan-btn">Set Reminder</button>
-        </div>
-        <div class="service">
-            <p>Add contact of your well wishers for location sharing</p>
+            <p>Find location using maps API</p>
             <img src="location.jpg" class="service-image">
-            <button class="plan-btn">Add Contact</button>
+            <a href="maps.html">
+            <button class="plan-btn">See map</button>
+          </a>
         </div>
-        <div class="service">
-            <p>Set your sleep time reminder for better health</p>
-            <img src="img3.jpg" class="service-image">
-            <button class="plan-btn">Sleep Reminder</button>
-        </div>
-        <i class="fa-solid fa-forward" style="color: rgba(0, 0, 0, 0.544);"></i>
-        
+        <i class="fa-solid fa-forward" style="color: rgba(0, 0, 0, 0.544);"></i>     
     </div>
 </div>
 
-<!---->
-<!--About us section-->
-    <div id="about-us-section">
-        <h1>About Us</h1>
-    </div>
-    <!--Contact section-->
-    <div id="contact-section">
-        <h1>Contact</h1>
-    </div>
-    <!-- Why choose us section -->
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Why Choose Us</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Niramit:wght@400;600;700&family=Nirmala+UI:wght@700&display=swap"
-          rel="stylesheet"
-        />
-        <style>
-          * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-          }
-    
-          body {
-            font-family:Arial, Helvetica, sans-serif;
-          }
-    
-          .why-choose-us-section {
-            box-sizing: border-box;
-            padding: 3.9rem 1rem;
-            margin: 0 auto;
-            width: 100%;
-            max-width: none;
-            min-height: 80vh;
-            background-color: #c5f7ff;
-            background-position: center;
-            /* background-size: cover;
-            background-image: url("https://cdn.builder.io/api/v1/image/assets/TEMP/93536718be3ed5537e59d091f514d4701fcb044b"); */
-            height: 100%;
-            width: 100%;
-          }
-    
-          .section-title {
-            margin-bottom: 4rem;
-            font-size: 3.75rem;
-            font-weight: bold;
-            text-align: center;
-            color: rgb(0, 0, 0);
-          }
-    
-          .feature-cards-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 4rem;
-            justify-content: center;
-          }
-    
-          .feature-card {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 378px;
-          }
-    
-          .card-bg {
-            width: 378px;
-            height: 389px;
-          }
-    
-          .card-title {
-            position: absolute;
-            width: 100%;
-            top: -60px;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-align: center;
-            color: rgb(30, 64, 175);
-          }
-    
-          .card-description {
-            position: absolute;
-            padding: 0 2rem;
-            top: 45px;
-            font-size: 1.875rem;
-            text-align: center;
-            color: rgb(2, 132, 199);
-          }
-    
-          .heart-icon,
-          .clock-icon {
-            position: absolute;
-            top: -120px;
-            width: 48px;
-            height: 48px;
-          }
-    
-          @media (max-width: 768px) {
-            .feature-card {
-              width: 300px;
-            }
-    
-            .card-bg {
-              width: 300px;
-            }
-    
-            .card-description {
-              font-size: 1.5rem;
-              top: 35px;
-            }
-    
-            .feature-cards-container {
-              gap: 2.5rem;
-            }
-          }
-    
-          @media (max-width: 640px) {
-            .why-choose-us-section {
-              padding: 4rem 1.25rem;
-            }
-    
-            .section-title {
-              margin-bottom: 3rem;
-              font-size: 2.25rem;
-            }
-    
-            .feature-card {
-              width: 100%;
-              max-width: 300px;
-            }
-    
-            .card-title {
-              font-size: 1.25rem;
-              top: -50px;
-            }
-    
-            .card-description {
-              padding: 0 1.25rem;
-              font-size: 1.25rem;
-            }
-          }
-        </style>
-      </head>
-      <body>
-        <section class="why-choose-us-section">
-          <header>
-            <h2 class="section-title">Why Choose Us</h2>
-          </header>
-    
-          <div class="feature-cards-container">
-            <!-- Feature Card 1 -->
-            <article class="feature-card">
-              <div>
-                <svg
-                  width="378"
-                  height="350"
-                  viewBox="0 0 400 411"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="card-bg"
-                >
-                  <g filter="url(#filter0_d_34_16)">
-                    <path
-                      d="M0 15C0 6.71572 6.71573 0 15 0H363C371.284 0 378 6.71573 378 15V374C378 382.284 371.284 389 363 389H15C6.71574 389 0 382.284 0 374V15Z"
-                      fill="white"
-                    ></path>
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_d_34_16"
-                      x="0"
-                      y="0"
-                      width="399.4"
-                      height="410.4"
-                      filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
-                    >
-                      <feFlood
-                        flood-opacity="0"
-                        result="BackgroundImageFix"
-                      ></feFlood>
-                      <feColorMatrix
-                        in="SourceAlpha"
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                        result="hardAlpha"
-                      ></feColorMatrix>
-                      <feOffset dx="11" dy="11"></feOffset>
-                      <feGaussianBlur stdDeviation="5.2"></feGaussianBlur>
-                      <feComposite in2="hardAlpha" operator="out"></feComposite>
-                      <feColorMatrix
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                      ></feColorMatrix>
-                      <feBlend
-                        mode="normal"
-                        in2="BackgroundImageFix"
-                        result="effect1_dropShadow_34_16"
-                      ></feBlend>
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="effect1_dropShadow_34_16"
-                        result="shape"
-                      ></feBlend>
-                    </filter>
-                  </defs>
-                </svg>
-              </div>
-    
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="heart-icon"
-                aria-label="Heart icon"
-              >
-                <path
-                  d="M41.68 9.22023C40.6585 8.19824 39.4456 7.38753 38.1107 6.8344C36.7758 6.28128 35.345 5.99658 33.9 5.99658C32.455 5.99658 31.0242 6.28128 29.6893 6.8344C28.3544 7.38753 27.1415 8.19824 26.12 9.22023L24 11.3402L21.88 9.22023C19.8166 7.15685 17.0181 5.99765 14.1 5.99765C11.1819 5.99765 8.38338 7.15685 6.31999 9.22023C4.25661 11.2836 3.09741 14.0822 3.09741 17.0002C3.09741 19.9183 4.25661 22.7168 6.31999 24.7802L24 42.4602L41.68 24.7802C42.702 23.7587 43.5127 22.5459 44.0658 21.2109C44.6189 19.876 44.9036 18.4452 44.9036 17.0002C44.9036 15.5553 44.6189 14.1244 44.0658 12.7895C43.5127 11.4546 42.702 10.2417 41.68 9.22023Z"
-                  stroke="white"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-    
-              <h3 class="card-title">Quality Care with Compassion</h3>
-              <p class="card-description">
-                We provide elderly care with a commitment to quality and compassion,
-                ensuring your loved ones receive the best support.
-              </p>
-            </article>
-    
-            <!-- Feature Card 2 -->
-            <article class="feature-card">
-              <div>
-                <svg
-                  width="378"
-                  height="389"
-                  viewBox="0 0 397 408"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="card-bg"
-                >
-                  <g filter="url(#filter0_d_34_19)">
-                    <path
-                      d="M0 15C0 6.71572 6.71573 0 15 0H363C371.284 0 378 6.71573 378 15V374C378 382.284 371.284 389 363 389H15C6.71574 389 0 382.284 0 374V15Z"
-                      fill="white"
-                    ></path>
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_d_34_19"
-                      x="0"
-                      y="0"
-                      width="397"
-                      height="408"
-                      filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
-                    >
-                      <feFlood
-                        flood-opacity="0"
-                        result="BackgroundImageFix"
-                      ></feFlood>
-                      <feColorMatrix
-                        in="SourceAlpha"
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                        result="hardAlpha"
-                      ></feColorMatrix>
-                      <feOffset dx="11" dy="11"></feOffset>
-                      <feGaussianBlur stdDeviation="4"></feGaussianBlur>
-                      <feComposite in2="hardAlpha" operator="out"></feComposite>
-                      <feColorMatrix
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                      ></feColorMatrix>
-                      <feBlend
-                        mode="normal"
-                        in2="BackgroundImageFix"
-                        result="effect1_dropShadow_34_19"
-                      ></feBlend>
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="effect1_dropShadow_34_19"
-                        result="shape"
-                      ></feBlend>
-                    </filter>
-                  </defs>
-                </svg>
-              </div>
-    
-              <h3 class="card-title">Safe and Reliable</h3>
-              <p class="card-description">
-                Elderly care with a focus on safety and reliability. Your loved ones
-                are in good hands with our dedicated team.
-              </p>
-            </article>
-    
-            <!-- Feature Card 3 -->
-            <article class="feature-card">
-              <div>
-                <svg
-                  width="378"
-                  height="389"
-                  viewBox="0 0 396 407"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="card-bg"
-                >
-                  <g filter="url(#filter0_d_34_20)">
-                    <path
-                      d="M0 15C0 6.71572 6.71573 0 15 0H363C371.284 0 378 6.71573 378 15V374C378 382.284 371.284 389 363 389H15C6.71574 389 0 382.284 0 374V15Z"
-                      fill="white"
-                    ></path>
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_d_34_20"
-                      x="0"
-                      y="0"
-                      width="395.3"
-                      height="406.3"
-                      filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
-                    >
-                      <feFlood
-                        flood-opacity="0"
-                        result="BackgroundImageFix"
-                      ></feFlood>
-                      <feColorMatrix
-                        in="SourceAlpha"
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                        result="hardAlpha"
-                      ></feColorMatrix>
-                      <feOffset dx="11" dy="11"></feOffset>
-                      <feGaussianBlur stdDeviation="3.15"></feGaussianBlur>
-                      <feComposite in2="hardAlpha" operator="out"></feComposite>
-                      <feColorMatrix
-                        type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                      ></feColorMatrix>
-                      <feBlend
-                        mode="normal"
-                        in2="BackgroundImageFix"
-                        result="effect1_dropShadow_34_20"
-                      ></feBlend>
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="effect1_dropShadow_34_20"
-                        result="shape"
-                      ></feBlend>
-                    </filter>
-                  </defs>
-                </svg>
-              </div>
-    
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="clock-icon"
-                aria-label="Clock icon"
-              >
-                <path
-                  d="M24 12V24L32 28M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z"
-                  stroke="white"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-    
-              <h3 class="card-title">Here for You, Anytime</h3>
-              <p class="card-description">
-                We offer support for the elderly whenever they need it, day or
-                night. Dedicated caregivers, personalized plans.
-              </p>
-            </article>
+<!--About us section--> 
+      <div id="about-us-section">
+      <div class="stack-area">
+        <div class="left">
+          <div class="title">About Us</div>
+          <div class="sub-title">
+            Welcome to ElderCare Connect, where we prioritize the well-being and happiness of our elderly community, Our pioneering approach integrates personalized care and modern technology to enhance the lives of seniors.We are committed to providing exceptional care and fostering trust with every individual we serve.Our team is composed of experienced caregivers and professionals dedicated to understanding and addressing the unique needs of seniors.
+            <br />
+          
           </div>
-        </section>
-      </body>
-    </html>
-    
-
-
-</main>
+        </div>
+        <div class="right">
+          <div class="card">
+            <div class="sub">Simplified</div>
+            <div class="content">Complex tasks are now simple</div>
+          </div>
+          <div class="card">
+            <div class="sub">Customer-centric</div>
+            <div class="content">We are committed to providing exceptional care</div>
+          </div>
+          <div class="card">
+            <div class="sub">Innovation</div>
+            <div class="content">We use modern technology and personalized care</div>
+          </div>
+          <div class="card">
+            <div class="sub">Support</div>
+            <div class="content">Now its 24/7 support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
