@@ -1,4 +1,4 @@
-let home = document.querySelector(".home");
+ let home = document.querySelector(".home");
 let services = document.querySelector(".services");
 let about = document.querySelector(".about");
 let contact = document.querySelector(".contact");
@@ -33,43 +33,16 @@ function openChatbot() {
     window.open('https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2025/04/12/11/20250412114555-44TMZL3D.json', '_blank');
   }
 
+cardInner.style.scale = valueAtPercentage({
+  from: 1,
+  to: toScale + 0.05, // reduce scale down factor
+  percentage: percentageY
+})
 
+cardInner.style.filter = `brightness(${valueAtPercentage({
+  from: 1,
+  to: 0.85, // reduce dimming
+  percentage: percentageY
+})})`
 
-
-  let cards = document.querySelectorAll(".card");
   
-        let stackArea = document.querySelector(".stack-area");
-  
-        function rotateCards() {
-          let angle = 0;
-          cards.forEach((card, index) => {
-            if (card.classList.contains("away")) {
-              card.style.transform = `translateY(-120vh) rotate(-48deg)`;
-            } else {
-              card.style.transform = ` rotate(${angle}deg)`;
-              angle = angle - 20;
-              card.style.zIndex = cards.length - index;
-            }
-          });
-        }
-  
-        rotateCards();
-  
-        window.addEventListener("scroll", () => {
-          let distance = window.innerHeight * 0.5;
-  
-          let topVal = stackArea.getBoundingClientRect().top;
-  
-          let index = -1 * (topVal / distance + 1);
-  
-          index = Math.floor(index);
-  
-          for (i = 0; i < cards.length; i++) {
-            if (i <= index) {
-              cards[i].classList.add("away");
-            } else {
-              cards[i].classList.remove("away");
-            }
-          }
-          rotateCards();
-        });

@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareBuddy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">        
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,9 +21,12 @@
                 <h2>CareBuddy</h2>
             </div>
             <a href="#home-page" class="nav-item home" onclick="borderHome()">Home</a>
-            <a href="#services-for-elders" class="nav-item services" onclick="borderServices()">Services</a>
+           
+            <a href="#services-page" class="nav-item"  onclick="borderHome()">Services</a>
+
             <a href="#about-us-section" class="nav-item about" onclick="borderAbout()">About Us</a>
-            <a href="why-choose-us.html" class="nav-item contact" onclick="borderContact()">Why choose us</a>
+            <a href="#why-choose-us" class="nav-item" onclick="borderAbout()">Why Choose Us</a>
+
             <a href="login.html"><button class="btn">Login</button></a>
             <a href="signUp.html"><button class="btn user-signup">Sign Up</button></a>
         </div>
@@ -51,98 +54,173 @@
     </div>
     </div>
     <!--Services-->
-    <div class="services-page" id="backward-services">
-      <div class="sub-heading">
-      <h1>See Our Services</h1>
-    </div>
-    <div class="front-page" id="services-for-elders">
-        <i class="fa-solid fa-backward" style="color: rgba(0, 0, 0, 0.544);"></i>
-        <div class="service">
-            <p>Generate a meal plan according to your diet</p>
-            <img src="diet.jpg" class="service-image">
-            
-            <a href="diet.html">
-                <button class="plan-btn">Make a diet plan</button>
-            </a>
-        </div>
+    <section id="services-page">
+   <div class="services-page" id="backward-services">
+  <div class="sub-heading">
+    <h1>See Our Services</h1>
+  </div>
 
-        <div class="service">
-            <p>Learn exercises from videos that will help you maintaining your fitness</p>
-            <img src="fitness.webp" class="service-image">
-            <a href="Exercise.html">
-                <button class="plan-btn">Learn Exercise</button>
-            </a>
-            
-        </div>
-        <div class="service">
-            <p>Make a to do list to plan your whole day</p>
-            <img src="todolist.jpeg" class="service-image">
-            <a href="todolist.html">
-            <button class="plan-btn">Make a to do list</button>
-        </a>
-        </div>
-        <div class="service">
-            <p>Calculate your BMI to check if you are fit or not</p>
-            <img src="bmi.jpg" class="service-image">
-            <a href="bmi.html">
-                <button class="plan-btn">Calculate BMI</button>
-            </a>
-        </div>
-        <a href="#forward-services">
-        <i class="fa-solid fa-forward"></i>
-    </a>
+  <div class="carousel-container">
+    <div class="service-card">
+      <p>Generate a meal plan accordingly.</p>
+      <img src="assets/diet.jpg" class="service-image" />
+      <a href="diet.html"><button class="plan-btn">Make a diet plan</button></a>
     </div>
-</div>
 
-<!--Page 2 of services-->
-<div class="services-page2" id="forward-services">
-    <div class="front-page" id="services-for-elders">
-        <a href="#backward-services">
-        <i class="fa-solid fa-backward"></i>
-    </a>
-        <div class="service">
-            <p>Find location using maps API</p>
-            <img src="location.jpg" class="service-image">
-            <a href="maps.html">
-            <button class="plan-btn">See map</button>
-          </a>
-        </div>
-        <i class="fa-solid fa-forward" style="color: rgba(0, 0, 0, 0.544);"></i>     
+    <div class="service-card">
+      <p>Learn exercises from videos & stay fit.</p>
+      <img src="assets/exercise.jpg" class="service-image" />
+      <a href="Exercise.html"><button class="plan-btn">Learn Exercise</button></a>
     </div>
+
+    <div class="service-card">
+      <p>Make a to-do list to plan your whole day</p>
+      <img src="assets/todolist.jpg" class="service-image" />
+      <a href="todolist.html"><button class="plan-btn">Make a to do list</button></a>
+    </div>
+
+    <div class="service-card">
+      <p>Calculate your BMI weight and have fun.</p>
+      <img src="assets/bmi.webp" class="service-image" />
+      <a href="bmi.html"><button class="plan-btn">Calculate BMI</button></a>
+    </div>
+
+    <div class="service-card">
+      <p>Find your nearby locations in the map.</p>
+      <img src="assets/location.webp" class="service-image" />
+      <a href="maps.html"><button class="plan-btn">See map</button></a>
+    </div>
+  </div>
 </div>
+    </section>
+
+
+
+<!-- ...everything above remains same ... -->
 
 <!--About us section--> 
-      <div id="about-us-section">
-      <div class="stack-area">
-        <div class="left">
-          <div class="title">About Us</div>
-          <div class="sub-title">
-            Welcome to ElderCare Connect, where we prioritize the well-being and happiness of our elderly community, Our pioneering approach integrates personalized care and modern technology to enhance the lives of seniors.We are committed to providing exceptional care and fostering trust with every individual we serve.Our team is composed of experienced caregivers and professionals dedicated to understanding and addressing the unique needs of seniors.
-            <br />
-          
-          </div>
+<div id="about-us-section"> 
+  <div class="stack-area">
+    <div class="left">
+    
+      <div class="sub-title">
+        Welcome to ElderCare Connect, where we prioritize the well-being and happiness of our elderly community. Our pioneering approach integrates personalized care and modern technology to enhance the lives of seniors. We are committed to providing exceptional care and fostering trust with every individual we serve. Our team is composed of experienced caregivers and professionals dedicated to understanding and addressing the unique needs of seniors.
+      </div>
+    </div>
+    
+    <div class="right stair-cards">
+  <div class="stair-card card-1">
+    <i class="fa-solid fa-gears"></i>
+    <h3>Simplified</h3>
+    <p>We turn complex tasks into simple, manageable solutions.</p>
+  </div>
+  <div class="stair-card card-2">
+    <i class="fa-solid fa-heart-circle-check"></i>
+    <h3>Customer Centric</h3>
+    <p>Care and compassion for every client is our top priority.</p>
+  </div> 
+               <div class="center">
+                 <div class="title">About Us</div>
+               </div>
+               
+  <div class="stair-card card-3">
+    <i class="fa-solid fa-lightbulb"></i>
+    <h3>Innovation</h3>
+    <p>We use modern tools and personalized solutions for better care.</p>
+  </div>
+  <div class="stair-card card-4">
+    <i class="fa-solid fa-headset"></i>
+    <h3>24/7 Support</h3>
+    <p>Our dedicated support team is always ready to assist you.</p>
+  </div>
+</div>
+
+
+
+    <!-- .right -->
+      </div> <!-- .stack-area -->
+    </div> <!-- #about-us-section -->
+  </main> <!-- ✅ Correct closing of main -->
+
+  <!--WHY CHOOSE US -->
+    <section id="why-choose-us">
+  <div class="space space--small"></div>
+  <div class="why-title">Why Choose Us?</div>
+  <div class="cards">
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__image-container">
+          <img class="card__image" src="https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg" alt="Quality Care" />
         </div>
-        <div class="right">
-          <div class="card">
-            <div class="sub">Simplified</div>
-            <div class="content">Complex tasks are now simple</div>
-          </div>
-          <div class="card">
-            <div class="sub">Customer-centric</div>
-            <div class="content">We are committed to providing exceptional care</div>
-          </div>
-          <div class="card">
-            <div class="sub">Innovation</div>
-            <div class="content">We use modern technology and personalized care</div>
-          </div>
-          <div class="card">
-            <div class="sub">Support</div>
-            <div class="content">Now its 24/7 support</div>
-          </div>
+        <div class="card__content">
+          <h1 class="card__title">Quality care with compassion</h1>
+          <p class="card__description">We provide elderly care with a commitment to quality and compassion, ensuring your loved ones receive the best support!</p>
         </div>
       </div>
     </div>
-</div>
-<script src="script.js"></script>
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__image-container">
+          <img class="card__image" src="https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg" alt="Safe and Reliable" />
+        </div>
+        <div class="card__content">
+          <h1 class="card__title">Safe and Reliable</h1>
+          <p class="card__description">Elderly care with a focus on safety and reliability. Your loved ones are in good hands with our dedicated team!</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__image-container">
+          <img class="card__image" src="https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg" alt="Support Anytime" />
+        </div>
+        <div class="card__content">
+          <h1 class="card__title">Here for you Anytime</h1>
+          <p class="card__description">We offer support for the elderly whenever they need it, day or night. Dedicated caregivers, personalized plans!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ✅ Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <i class="fa-solid fa-person-cane"></i>
+        <h2>CareBuddy</h2>
+        <p>Empowering Elderly Care with Compassion & Technology</p>
+      </div>
+
+      <div class="footer-middle">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home-page">Home</a></li>
+          <li><a href="#services-for-elders">Services</a></li>
+          <li><a href="#about-us-section">About Us</a></li>
+          <li><a href="why-choose-us.html">Why Choose Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <h4>Contact Us</h4>
+        <p>Email: carebuddy@example.com</p>
+        <p>Phone: +91-9876543210</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CareBuddy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
